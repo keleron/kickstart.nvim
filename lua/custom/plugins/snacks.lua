@@ -29,5 +29,12 @@ return {
       end,
       desc = 'open Lazygit',
     },
+    {
+      '<leader>fp',
+      function()
+        Snacks.picker.projects()
+      end,
+      desc = 'Projects',
+    },
   },
 }
