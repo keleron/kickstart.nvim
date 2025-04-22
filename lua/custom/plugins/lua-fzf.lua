@@ -23,7 +23,7 @@ return {
     local project = require 'project_nvim'
 
     vim.keymap.set('n', '<leader>fp', function()
-      local projects = project.get_projects()
+      local projects = project.get_recent_projects()
       if #projects == 0 then
         print 'No projects found.'
         return
