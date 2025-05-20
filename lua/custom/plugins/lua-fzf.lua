@@ -14,7 +14,7 @@ return {
     local fzf = require 'fzf-lua'
     vim.keymap.set('n', '<leader>ff', fzf.files, { desc = 'fzf [F]ind [F]iles' })
     vim.keymap.set('n', '<leader><leader>', fzf.buffers, { desc = 'fzf [F]ind [B]uffer' })
-    vim.keymap.set('n', '<leader>sg', fzf.grep, { desc = 'fzf [S]earch [G]rep' })
+    vim.keymap.set('n', '<leader>sg', fzf.live_grep, { desc = 'fzf [S]earch [G]rep' })
     vim.keymap.set('n', '<leader>sw', fzf.grep_cword, { desc = 'fzf [S]earch [W]ord' })
     vim.keymap.set('n', '<leader>fn', function()
       require('fzf-lua').files { cwd = vim.fn.stdpath 'config' }

@@ -17,6 +17,9 @@ return { -- You can easily change to a different colorscheme.
           underline = true,
           bold = true,
         }
+        hl.WinSeparator = {
+          fg = colors.red,
+        }
       end,
     }
     -- Load the colorscheme here.
